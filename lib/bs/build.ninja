@@ -1,0 +1,17 @@
+rescript = 1
+g_finger := /Users/chus/Code/ReScript/my-app/node_modules/@rescript/react/lib/ocaml/install.stamp
+rule astj
+  command = /Users/chus/Code/ReScript/my-app/node_modules/rescript/darwin/bsc.exe  -warn-error +101 -bs-v 9.1.4 -bs-jsx 3  -absname -bs-ast -o $out $i
+o src/App.ast : astj ../../src/App.res
+rule deps
+  command = /Users/chus/Code/ReScript/my-app/node_modules/rescript/darwin/bsb_helper.exe -hash 68fcd473a7436507741ba313a9f225ab $in
+  restat = 1
+o src/App.d : deps src/App.ast
+rule mij
+  command = /Users/chus/Code/ReScript/my-app/node_modules/rescript/darwin/bsc.exe -I src/components -I src -I /Users/chus/Code/ReScript/my-app/node_modules/@rescript/react/lib/ocaml   -warn-error +101 -bs-package-name rescript-project-template -bs-package-output commonjs:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src/App.cmj src/App.cmi ../../src/App.bs.js : mij src/App.ast
+o src/components/Counter.ast : astj ../../src/components/Counter.res
+o src/components/Counter.d : deps src/components/Counter.ast
+o src/components/Counter.cmj src/components/Counter.cmi ../../src/components/Counter.bs.js : mij src/components/Counter.ast

@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1652885787 "/Users/chus/Code/ReScript/my-app/design/main.tex" "main.pdf" "main" 1652885788
-  "/Users/chus/Code/ReScript/my-app/design/main.tex" 1652885786 678 5247e18a4816a81f24e23296245f8a1f ""
+["pdflatex"] 1652888119 "/Users/chus/Code/ReScript/my-app/design/main.tex" "main.pdf" "main" 1652888120
+  "/Users/chus/Code/ReScript/my-app/design/main.tex" 1652888119 1024 04f75a97e00a2518c0de7dca9233b003 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -136,8 +136,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649674726 2826447 c2f15bd94386a51892d11f6ad7591607 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "main.aux" 1652885788 212 470472f08a41f04fe02da100bae084eb "pdflatex"
-  "main.tex" 1652885786 678 5247e18a4816a81f24e23296245f8a1f ""
+  "main.aux" 1652888120 413 ce32569df58b9c02a81afee67005551b "pdflatex"
+  "main.tex" 1652888119 1024 04f75a97e00a2518c0de7dca9233b003 ""
   (generated)
   "main.aux"
   "main.log"

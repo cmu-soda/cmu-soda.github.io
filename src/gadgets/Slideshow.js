@@ -1,42 +1,61 @@
 import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Container, Button } from 'react-bootstrap'
+import placeholder from 'images/placeholder/sample_800x400.jpeg'
+
+import pic1 from 'images/web/2021-team-outing.jpg'
+import pic2 from 'images/web/2021-christmas-party.jpg'
+import pic3 from 'images/web/2019-REU.jpg'
 
 export default function Slideshow() {
   return (
-    <Carousel variant="dark">
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=f5f5f5"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h5>First slide label</h5>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=eee"
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-      <h5>Second slide label</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=e5e5e5"
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-      <h5>Third slide label</h5>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+    <Carousel>
+      {/* <Carousel variant="dark"> */}
+      <Carousel.Item>
+        {/* 16:9 aspect ratio */}
+        {/* https://redketchup.io/image-resizer */}
+        <img
+          className="d-block w-100"
+          src={pic1}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h5>Better together</h5>
+          <p>At SoDA, we believe in deep collaboration, which allow us to innovate in a way that others cannot.</p>
+          
+        </Carousel.Caption>
+      </Carousel.Item>
+
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={pic2}
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h5>Have fun... lots of it</h5>
+          <p>We believe fun should be part of everything we do.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={pic3}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h5>REUSE Program</h5>
+          <p>Every year, we welcome research interns to SoDA lab through the REUSE program</p>
+          <p>
+          <Button href="https://www.cmu.edu/scs/isr/reuse/" variant="primary" size="lg">
+            Learn more
+          </Button>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+    </Carousel>
   )
 }

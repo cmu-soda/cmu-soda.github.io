@@ -3,13 +3,17 @@
 
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Switch, Route, BrowserRouter as Router, } from "react-router-dom";
-import Navigation from "components/Navigation";
+import { Switch, Route, HashRouter as Router, } from "react-router-dom";
 
-import Main from './components/Main';
-import People from './components/People';
-import Research from './components/Research';
-import Publication from './components/Publication';
+import Navigation from "gadgets/Navigation";
+import Footer from 'gadgets/Footer'
+
+import Main from 'components/Main';
+import People from 'components/People';
+import Research from 'components/Research';
+import Publication from 'components/Publication';
+
+import FeatureInteraction from "pages/research/FeatureInteraction";
 
 
 export default function App() {
@@ -19,10 +23,15 @@ export default function App() {
                 <Navigation />
                 <Switch>
                     <Route exact path='/' component={Main} />
-                    <Route path='/people' component={People} />
-                    <Route path='/research' component={Research} />
-                    <Route path='/publication' component={Publication} />
+                    <Route exact path='/people' component={People} />
+                    <Route exact path='/research' component={Research} />
+                    <Route exact path='/publication' component={Publication} />
+
+                    {/* custom project pages */}
+                    <Route exact path='/research/feature-interaction' component={FeatureInteraction} />
+
                 </Switch>
+                <Footer />
             </Router>
         </>
     );

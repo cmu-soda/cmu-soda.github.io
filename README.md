@@ -18,3 +18,7 @@ npm run re:start
 # github pages
 npm run deploy
 ```
+
+# UI Components
+## Navigation bar
+1. [HashRouter](https://dev.to/zenulabidin/how-not-to-deploy-a-react-site-to-github-pages-42ge)

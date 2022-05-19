@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7720ab7.css",
-    "main.js": "/static/js/main.7f23853c.js",
+    "main.css": "/static/css/main.037bf979.css",
+    "main.js": "/static/js/main.29701e95.js",
     "static/media/2021-team-outing.jpg": "/static/media/2021-team-outing.398c769dc82daa20c79f.jpg",
+    "static/media/2019-REU.jpg": "/static/media/2019-REU.1036bf38582c20e7175a.jpg",
+    "static/media/2021-christmas-party.jpg": "/static/media/2021-christmas-party.b9be48f6a3a310fa2fff.jpg",
     "static/media/sample_800x400.jpeg": "/static/media/sample_800x400.2443263eee844638749a.jpeg",
+    "static/media/reasoning.png": "/static/media/reasoning.2407f9061be56bfc5453.png",
+    "static/media/swe.png": "/static/media/swe.aa4d07e50dc27915a3f8.png",
     "index.html": "/index.html",
-    "main.e7720ab7.css.map": "/static/css/main.e7720ab7.css.map",
-    "main.7f23853c.js.map": "/static/js/main.7f23853c.js.map"
+    "main.037bf979.css.map": "/static/css/main.037bf979.css.map",
+    "main.29701e95.js.map": "/static/js/main.29701e95.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7720ab7.css",
-    "static/js/main.7f23853c.js"
+    "static/css/main.037bf979.css",
+    "static/js/main.29701e95.js"
   ]
 }

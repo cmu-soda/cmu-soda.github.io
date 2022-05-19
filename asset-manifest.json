@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.e7720ab7.css",
-    "main.js": "/static/js/main.877de18a.js",
+    "main.js": "/static/js/main.7f23853c.js",
+    "static/media/2021-team-outing.jpg": "/static/media/2021-team-outing.398c769dc82daa20c79f.jpg",
+    "static/media/sample_800x400.jpeg": "/static/media/sample_800x400.2443263eee844638749a.jpeg",
     "index.html": "/index.html",
     "main.e7720ab7.css.map": "/static/css/main.e7720ab7.css.map",
-    "main.877de18a.js.map": "/static/js/main.877de18a.js.map"
+    "main.7f23853c.js.map": "/static/js/main.7f23853c.js.map"
   },
   "entrypoints": [
     "static/css/main.e7720ab7.css",
-    "static/js/main.877de18a.js"
+    "static/js/main.7f23853c.js"
   ]
 }

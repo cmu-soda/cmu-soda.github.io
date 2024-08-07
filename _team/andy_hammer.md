@@ -1,6 +1,6 @@
 ---
 title: Andy Hammer
-job_title: SE PhD Student
+job_title: SE Ph.D. Student
 category: phd_student
 layout: page
 image: /assets/img/andy_hammer.jpg
@@ -15,6 +15,9 @@ Andy is advised by Dr. Eunsuk Kang and Dr. Fraser Brown, and is currently resear
 
 ## Email ##
 [arhammer@andrew.cmu.edu](mailto:arhammer@andrew.cmu.edu)
+
+## Website ##
+[https://arhammer.github.io/](https://arhammer.github.io/)
 
 ## LinkedIn ##
 [https://www.linkedin.com/in/arhammer/](https://www.linkedin.com/in/arhammer/)

@@ -1,8 +1,8 @@
 ---
 title: Saloni Sinha
 # subtitle: Research Staff
-job_title: Research Associate (MSE Research Fellow)
-category: research_staff
+job_title: MSE Research Fellow (2024)
+category: alumni
 layout: page
 image: /assets/img/saloni.png
 hide_footer: true

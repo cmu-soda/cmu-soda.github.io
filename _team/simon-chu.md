@@ -1,8 +1,8 @@
 ---
 title: Simon Chu 
 # subtitle: Ph.D. Student
-job_title: SE Ph.D. Student
-category: phd_student
+job_title: SE Ph.D. Student (2020-2024)
+category: alumni
 layout: page
 image: /assets/img/simon_chu.jpg
 hide_footer: true

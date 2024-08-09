@@ -9,7 +9,8 @@ hide_footer: true
 link-new-tab: true
 ---
 <!-- team/ian_dardik.md -->
-Ian is a second-year graduate student at the Software and Societal Systems Department, Carnegie Mellon University currently pursuing a Ph.D. in Software Engineering. His research is primarily based on formal methods, including compositional model checking and robustness for discrete systems.
+Ian is a third-year graduate student at the Software and Societal Systems Department, Carnegie Mellon University currently pursuing a Ph.D. in Software Engineering.
+His research is primarily based on formal methods, including compositional model checking and robustness for discrete systems.
 
 ## Email ##
 [idardik@andrew.cmu.edu](mailto:idardik@andrew.cmu.edu)

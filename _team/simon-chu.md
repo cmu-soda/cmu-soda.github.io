@@ -9,7 +9,7 @@ hide_footer: true
 link-new-tab: true
 ---
 <!-- team/simon_chu.md -->
-Simon is a fourth-year graduate student at the Software and Societal Systems Department, Carnegie Mellon University currently pursuing a Ph.D. in Software Engineering. His interest is in the interaction of formal methods and requirement engineering, with the goal of ensuring the runtime safety of cyber-physical or other safety-critical systems.
+As a member of SoDA, Simon worked on techniques for ensuring the runtime safety of cyber-physical and other safety-critical systems.
 ​
 ## Email ##
 [simonchu@cmu.edu](mailto:simonchu@cmu.edu)

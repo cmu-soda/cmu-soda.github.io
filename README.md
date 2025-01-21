@@ -12,3 +12,5 @@ For images, keep them in 480*480 px and place them in assets/img folder.
 
 In order to run it locally, install [jekyll](https://jekyllrb.com/docs/). 
 Then run: bundle install, and bundle exec jekyll serve
+
+Try Ruby v3.3.0 if an error occurs while running bundle install.

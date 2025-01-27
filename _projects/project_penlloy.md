@@ -2,7 +2,6 @@
 title: Visualizations of Formal Specifications
 subtitle:
 description:
-category: current
 layout: product
 image: ../assets/img/penlloy-thumbnail.png
 features:

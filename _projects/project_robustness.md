@@ -2,7 +2,6 @@
 title: Behavioral Robustness of Software System Designs
 subtitle: 
 description: 
-category: past
 layout: product
 image: ../assets/img/robustness_project.png
 features:

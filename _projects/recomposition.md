@@ -2,7 +2,6 @@
 title: 'Recomposition: A New Technique for Efficient Compositional Verification'
 subtitle: 
 description: 
-category: current
 layout: product
 image: ../assets/img/recomposition.jpg
 features:

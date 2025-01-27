@@ -2,7 +2,6 @@
 title:  Decomposing STL for Safe Planning
 subtitle: 
 description: A theory for decomposing Signal Temporal Logic Specifications
-category: current
 layout: product
 image: ../assets/img/parvproj2.jpg
 features:

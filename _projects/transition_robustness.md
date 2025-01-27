@@ -2,7 +2,6 @@
 title: Transition-Based Robustness for Distributed and Cyber-Physical Systems
 subtitle: 
 description: 
-category: current
 layout: product
 image: ../assets/img/safe_env_envelopes.jpg
 features:

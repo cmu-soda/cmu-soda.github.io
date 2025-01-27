@@ -2,6 +2,7 @@
 title: Verification of Secure Multiparty Computation Deployments with Domain Context
 subtitle: 
 description: 
+category: past
 layout: product
 image: ../assets/img/andy_project_2.jpg
 features:

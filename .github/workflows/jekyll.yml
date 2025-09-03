@@ -15,27 +15,25 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  RUBY_VERSION_FULL: "3.1.4"    # exact version we’ll place in toolcache
-  RUBY_VERSION_SHORT: "3.1"     # what bundler/setup-ruby will request
-  TOOLCACHE_DIR: "${{ env.RUNNER_TOOL_CACHE || '/opt/hostedtoolcache' }}"
+  RUBY_VERSION_FULL: "3.1.4"    # exact version
+  RUBY_VERSION_SHORT: "3.1"     # what setup-ruby will request
 
 jobs:
   build:
-    # If you truly must run on your Ubuntu 24.04 self-hosted label, keep it.
-    # For GitHub-hosted 24.04, use: runs-on: ubuntu-24.04
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # --- Bootstrap Ruby into toolcache if needed (self-hosted-detected case) ---
       - name: Ensure Ruby in toolcache (self-hosted safe)
         shell: bash
         run: |
           set -euo pipefail
+          TOOLCACHE_DIR="${RUNNER_TOOL_CACHE:-/opt/hostedtoolcache}"
           RUBY_DIR="$TOOLCACHE_DIR/Ruby/$RUBY_VERSION_FULL/x64"
           SENTINEL="$RUBY_DIR.complete"
           LOCK="/var/tmp/ruby-${RUBY_VERSION_FULL}.lock"
+
           echo "Toolcache dir: $TOOLCACHE_DIR"
           echo "Target Ruby dir: $RUBY_DIR"
 
@@ -44,12 +42,10 @@ jobs:
             exit 0
           fi
 
-          # If the runner already has a working Ruby matching the short version, don't rebuild.
           if command -v ruby >/dev/null 2>&1; then
             INSTALLED="$(ruby -e 'print RUBY_VERSION' || true)"
             if [[ "${INSTALLED:-}" == ${RUBY_VERSION_SHORT}.* ]]; then
               echo "A matching Ruby ${INSTALLED} is already available on PATH; skipping toolcache build."
-              # Let setup-ruby use this one.
               exit 0
             fi
           fi
@@ -57,14 +53,12 @@ jobs:
           sudo mkdir -p "$RUBY_DIR"
           sudo chown -R "$USER":"$USER" "$TOOLCACHE_DIR"
 
-          # Serialize builds across parallel jobs
           exec 9>"$LOCK"
           if ! flock -n 9; then
             echo "Another job is building Ruby. Waiting on lock..."
             flock 9
           fi
 
-          # Double-check after acquiring lock.
           if [ -f "$SENTINEL" ]; then
             echo "Ruby $RUBY_VERSION_FULL now present (sentinel found after lock)."
             exit 0
@@ -87,19 +81,14 @@ jobs:
           echo "Building Ruby $RUBY_VERSION_FULL into toolcache..."
           ruby-build "$RUBY_VERSION_FULL" "$RUBY_DIR"
 
-          # Setup toolcache layout for setup-ruby
-          # (create a version file; some tools look for this)
           echo "$RUBY_VERSION_FULL" > "$RUBY_DIR.version"
-
-          # Mark complete so other jobs don't rebuild
           touch "$SENTINEL"
-
           echo "Ruby $RUBY_VERSION_FULL installed at $RUBY_DIR"
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ env.RUBY_VERSION_SHORT }}   # '3.1'
+          ruby-version: ${{ env.RUBY_VERSION_SHORT }}
           bundler-cache: true
           cache-version: 0
 

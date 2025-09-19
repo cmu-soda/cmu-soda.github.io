@@ -3,7 +3,7 @@ title: Design-Time Computation of the Recoverability of a System
 subtitle: 
 description: Computing if a system can recovery when an invariant is violated by returning to a non-violating state.
 layout: product
-image: 
+image: ../assets/img/recovery.png
 features:
     - label: System Recoverability
       icon: fa-history

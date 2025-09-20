@@ -16,4 +16,4 @@ Recomposition is determined by a *recomposition map*; since there are many recom
 In our FMCAD'24 paper, we introduce the notion of recomposition and present a recomposition-based model checker for the TLA+ formal specification language.
 
 *Publications:*
-- Recomposition: A New Technique for Efficient Compositional Verification (*to appear in FMCAD 2024*)
+- [Recomposition: A New Technique for Efficient Compositional Verification](https://doi.org/10.34727/2024/isbn.978-3-85448-065-5_18)

@@ -68,6 +68,11 @@ collections:
     output: true
     layout: product
     show_sidebar: false
+  reu:
+    output: true
+    layout: product
+    show_sidebar: false
+    permalink: /reu/:name/
 navbar_fixed: true
 footer_fixed: true
 

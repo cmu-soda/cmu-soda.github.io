@@ -2,7 +2,7 @@
 title: Compositional Verification of Distributed Protocols in TLA+
 subtitle: 
 layout: product
-image: /assets/img/recomposition.jpg
+image: /assets/img/john_reu_project.png
 year: 2025
 mentor: Ian Dardik
 student: John Ngyuyen
@@ -22,7 +22,6 @@ __Student Involvement__
 Students will learn about the theory of model checking, including TLA+ and compositional verification. The goal of the project is for the student to implement compositional verification techniques in an existing model checker for the TLA+ language. Students will work with one of two model checkers that our team has been developing: Recomp-Verify and Carini (see the references). Both model checkers are implemented in Java, so students will be expected to write Java code.
 
 __References__
-[https://github.com/cmu-soda/recomp-verify/tree/FMCAD24](https://github.com/cmu-soda/recomp-verify/tree/FMCAD24)
-
-[https://github.com/cmu-soda/carini](https://github.com/cmu-soda/carini)
+- [https://github.com/cmu-soda/recomp-verify/tree/FMCAD24](https://github.com/cmu-soda/recomp-verify/tree/FMCAD24)
+- [https://github.com/cmu-soda/carini](https://github.com/cmu-soda/carini)
 

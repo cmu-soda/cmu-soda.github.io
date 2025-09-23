@@ -15,3 +15,5 @@ features:
       icon: fa-history
 ---
 
+This project aims to improve _recomposition_ for efficiently verifying distributed systems.
+The project involves improving techniques for decomposing systems and improving algorithms for threading to accelerate the speed of model checking.

@@ -66,10 +66,10 @@ permalink: /team/
     {%- endfor %}
 </div>
 <!-- Staff Section -->
-<h3>Research Staff</h3>
+<h3>Researchers</h3>
 <div class="team-members">
     {%- for member in site.team %}
-        {%- if member.category == 'research_staff' %}
+        {%- if member.category == 'researcher' %}
             <a href="{{ '' | append: member.name | downcase | replace: '.md', ''| append: '.html' }}" class="team-member-link">
                 <div class="team-member">
                     <img src="{{ member.image | relative_url }}" alt="{{ member.title }}" style="width:100%;">

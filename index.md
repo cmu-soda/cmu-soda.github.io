@@ -4,7 +4,7 @@
 layout: page
 permalink: /
 hero_height: is-medium
-hero_image: assets/img/team2.gif
+hero_image: assets/img/home_header.png
 show_sidebar: true
 # subtitle:
 # #<a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.

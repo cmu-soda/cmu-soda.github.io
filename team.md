@@ -31,6 +31,9 @@ permalink: /team/
 </div>
 
 <!-- Postdoc Section -->
+{% assign postdocs = site.team | where: "category", "postdoc" %}
+
+{% if postdocs.size > 0 %}
 <h3>Postdocs</h3>
 <div class="team-members">
     {%- for member in site.team %}
@@ -47,6 +50,7 @@ permalink: /team/
         {%- endif %}
     {%- endfor %}
 </div>
+{% endif %}
 
 <!-- PhD Student Section -->
 <h3>PhD Students</h3>
@@ -66,6 +70,9 @@ permalink: /team/
     {%- endfor %}
 </div>
 <!-- Staff Section -->
+{% assign researcher = site.team | where: "category", "postdoc" %}
+
+{% if researcher.size > 0 %}
 <h3>Researchers</h3>
 <div class="team-members">
     {%- for member in site.team %}
@@ -82,6 +89,7 @@ permalink: /team/
         {%- endif %}
     {%- endfor %}
 </div>
+{%- endif %}
 
 <!-- Alumni -->
 <h3>Alumni</h3>

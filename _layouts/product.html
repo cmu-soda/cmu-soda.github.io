@@ -21,6 +21,17 @@ layout: default
         {% if page.rating %}
             {% include rating.html rating=page.rating %}
         {% endif %}
+
+	{% if page.category == "reu" %}
+	<div class="content">
+		{% if page.student %}
+		<p><strong>Student:</strong> {{ page.student }} </p>
+		{% endif %}
+		{% if page.mentor %}
+		<p><strong>Mentor:</strong> {{ page.mentor }} </p>
+		{% endif %}
+	</div>
+	{% endif %}
         
         {% if page.features %}
         <div class="content">

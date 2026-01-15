@@ -14,7 +14,8 @@ permalink: /projects/
 <!-- Current Projects -->
 {% assign current = site.projects | where: "status", "current" %}
 {% if current.size > 0 %}
-<h3>Current Projects</h3>
+<h2>Current Projects</h2>
+<div class="columns is-multiline">
 {% for product in current %}
   <div class="column is-4-desktop is-6-tablet">
 
@@ -42,12 +43,14 @@ permalink: /projects/
 
   </div>
 {% endfor %}
+</div>
 {% endif %}
 
 <!-- Past Projects -->
 {% assign past = site.projects | where: "status", "past" %}
 {% if past.size > 0 %}
-<h3>Past Projects</h3>
+<h2>Past Projects</h2>
+<div class="columns is-multiline">
 {% for product in past %}
   <div class="column is-4-desktop is-6-tablet">
 
@@ -75,6 +78,7 @@ permalink: /projects/
 
   </div>
 {% endfor %}
+</div>
 {% endif %}
 {% endif %}
 

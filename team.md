@@ -70,7 +70,7 @@ permalink: /team/
     {%- endfor %}
 </div>
 <!-- Staff Section -->
-{% assign researcher = site.team | where: "category", "postdoc" %}
+{% assign researcher = site.team | where: "category", "researcher" %}
 
 {% if researcher.size > 0 %}
 <h3>Researchers</h3>

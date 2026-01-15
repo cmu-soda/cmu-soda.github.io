@@ -3,6 +3,7 @@ title: 'Recomposition: A New Technique for Efficient Compositional Verification'
 subtitle: 
 description: 
 layout: product
+status: current
 image: ../assets/img/recomposition.jpg
 features:
     - label: Formal Verification

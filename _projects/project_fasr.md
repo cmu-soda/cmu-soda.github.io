@@ -3,6 +3,7 @@ title: Formalization and Automation of STPA with Robustness (FASR)
 subtitle: 
 description: 
 layout: product
+status: current
 image: /assets/img/fasr_project.png
 features:
     - label: System Safety Analysis

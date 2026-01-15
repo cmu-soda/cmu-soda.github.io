@@ -52,23 +52,6 @@ permalink: /team/
 </div>
 {% endif %}
 
-<!-- PhD Student Section -->
-<h3>PhD Students</h3>
-<div class="team-members">
-    {%- for member in site.team %}
-        {%- if member.category == 'phd_student' %}
-            <a href="{{ '' | append: member.name | downcase | replace: '.md', ''| append: '.html' }}" class="team-member-link">
-                <div class="team-member">
-                    <img src="{{ member.image | relative_url }}" alt="{{ member.title }}" style="width:100%;">
-                    <div class="container">
-                        <h4><b>{{ member.title }}</b></h4>
-                        {{ member.job_title }}
-                    </div>
-                </div>
-            </a>
-        {%- endif %}
-    {%- endfor %}
-</div>
 <!-- Staff Section -->
 {% assign researcher = site.team | where: "category", "researcher" %}
 
@@ -90,6 +73,24 @@ permalink: /team/
     {%- endfor %}
 </div>
 {%- endif %}
+
+<!-- PhD Student Section -->
+<h3>PhD Students</h3>
+<div class="team-members">
+    {%- for member in site.team %}
+        {%- if member.category == 'phd_student' %}
+            <a href="{{ '' | append: member.name | downcase | replace: '.md', ''| append: '.html' }}" class="team-member-link">
+                <div class="team-member">
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.title }}" style="width:100%;">
+                    <div class="container">
+                        <h4><b>{{ member.title }}</b></h4>
+                        {{ member.job_title }}
+                    </div>
+                </div>
+            </a>
+        {%- endif %}
+    {%- endfor %}
+</div>
 
 <!-- Alumni -->
 <h3>Alumni</h3>

@@ -3,6 +3,7 @@ title: "FairSense: Long-term Fairness Analysis of ML-Enabled Systems"
 subtitle: 
 description: 
 layout: product
+status: current
 image: ../assets/img/feedbackloop-project.png
 features:
     - label: Machine Learning

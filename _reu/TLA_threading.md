@@ -2,6 +2,7 @@
 title: TLA+ Threading for Recomp-Verify
 subtitle: 
 layout: product
+category: reu
 image: /assets/img/recomposition.jpg
 year: 2024
 student: Eduardo Naranjo

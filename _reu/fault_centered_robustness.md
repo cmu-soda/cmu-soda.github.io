@@ -2,6 +2,7 @@
 title: Fault Centered Robustness in TLA+
 subtitle: 
 layout: product
+category: reu
 image: /assets/img/will_reu_project.png
 year: 2024
 mentor: Ian Dardik

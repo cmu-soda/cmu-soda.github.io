@@ -2,6 +2,7 @@
 title: First-Order Quantified Separator in Alloy Analyzer
 subtitle: 
 layout: product
+category: reu
 image: /assets/img/separator.png
 year: 2025
 student: One An

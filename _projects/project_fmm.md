@@ -3,6 +3,7 @@ title: A Formal Approach to the Analysis of Human-Machine Interaction with Fuzzy
 subtitle: 
 description: Modeling human mental models with Alloy-based model checking and mode confusion detection
 layout: product
+status: current
 image: ../assets/img/fmm_project.png
 features:
     - label: Human Factors

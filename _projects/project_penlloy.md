@@ -2,6 +2,7 @@
 title: Improving Formal Methods Visualizations
 description:
 layout: product
+status: past
 image: ../assets/img/penlloy-thumbnail.png
 features:
   - label: Formal specifications

@@ -3,6 +3,7 @@ title: AlloyMax - Bringing Maximum Satisfaction to Relational Specifications
 subtitle: 
 description: 
 layout: product
+status: past
 image: ../assets/img/alloymax_project.png
 features:
     - label: Alloy

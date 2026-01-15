@@ -2,6 +2,7 @@
 title: Compositional Verification of Distributed Protocols in TLA+
 subtitle: 
 layout: product
+category: reu
 image: /assets/img/john_reu_project.png
 year: 2025
 mentor: Ian Dardik

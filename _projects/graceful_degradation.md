@@ -3,6 +3,7 @@ title: Graceful Degradation of Architecture
 subtitle: 
 description: Studying how architectures can continue to deliver services even under attack.
 layout: product
+status: current
 image: ../assets/img/graceful_deg.png
 features:
     - label: Software Architecture
